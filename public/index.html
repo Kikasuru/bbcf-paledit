@@ -1,0 +1,52 @@
+<head>
+    <title>BlazBlueCF PalEdit</title>
+    <style>
+        body {
+            background-color: SlateGray;
+            color: Black;
+            font-family: "Verdana",Sans-serif;
+        }
+
+        #palControls {
+            float:right;
+            width:300px;
+            height:100%;
+            overflow-y:auto;
+        }
+
+        #character {
+            image-rendering: pixelated;
+        }
+
+        input[type=color]{
+        	width:32px;
+            height:32px;
+        }
+    </style>
+
+    <!--Main Script-->
+    <script src="index.js"></script>
+
+    <!--Bin Folder-->
+    <script src="bin/characters.js"></script> <!--Character Metadata-->
+    <script src="bin/util.js"></script> <!--Utility Functions-->
+</head>
+<body onload="init()">
+    <div id="palControls">
+
+    </div>
+
+    Choose Character
+    <select id="characterSelect" onchange="changeChar()">
+
+    </select>
+    <br>
+    Import Palette
+    <input type="file" id="palImport" accept=".hpl, .hip"> <!--Let the script load graphics so it can grab the default palette.-->
+    <input type="button" value="Import" onclick="loadPalette()">
+    <br>
+    Save Palette
+    <input type="button" value="Save.." onclick="savePalette()">
+    <br>
+    <canvas id="character"></canvas>
+</body>
