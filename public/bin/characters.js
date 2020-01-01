@@ -310,9 +310,73 @@ const characters = [
         img:"taokaka.png",
         internal:"tk",
         colors:[
-
+            {
+                name:"Skin (Legs)",
+                pointer:0x24,
+                count:4
+            },
+            {
+                name:"Jacket",
+                pointer:0x34,
+                count:4
+            },
+            {
+                name:"Hair (Braids)",
+                pointer:0x44,
+                count:3
+            },
+            {
+                name:"Zipper and Hair Slot",
+                pointer:0x50,
+                count:3
+            },
+            {
+                name:"Ears and Jacket Lines",
+                pointer:0x5C,
+                count:3
+            },
+            {
+                name:"Hairbows",
+                pointer:0x68,
+                count:3
+            },
+            {
+                name:"Boot Soles",
+                pointer:0x74,
+                count:3
+            },
+            {
+                name:"Tail Tip",
+                pointer:0x80,
+                count:3
+            },
+            {
+                name:"Tail",
+                pointer:0x8C,
+                count:3
+            },
+            {
+                name:"Teeth",
+                pointer:0x98,
+                count:2
+            },
+            {
+                name:"Inside Mouth",
+                pointer:0xA0,
+                count:2
+            },
+            {
+                name:"Eyes",
+                pointer:0xA8,
+                count:2
+            },
+            {
+                name:"Claws",
+                pointer:0xE0,
+                count:4
+            }
         ],
-        imgBase:[],
-        byteSize:0x0
+        imgBase:[[[188,178,195],[147,133,148],[106,88,101],[64,43,54]],[[0,189,0],[9,147,5],[18,105,11],[28,62,17]],[[28,193,255],[34,131,204],[41,68,152]],[[255,105,94],[182,55,47],[109,4,0]],[[159,143,255],[105,67,204],[51,23,152]],[[255,71,159],[161,36,114],[66,0,68]],[[66,15,182],[52,8,125],[38,0,68]],[[152,154,158],[98,99,102],[44,43,45]],[[159,86,98],[118,51,63],[77,15,28]],[[216,216,216],[111,111,111]],[[0,68,216],[25,39,141]],[[27,0,206],[15,0,123]],[[212,209,203],[174,157,164],[135,105,125],[97,53,86]]],
+        byteSize:0x420
     }
 ]
